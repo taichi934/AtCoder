@@ -18,16 +18,16 @@ int main() {
     }
 
     int right = 0;
-    ll times = 1;
+    ll multi = 1;
     int length = 0;
     for (int left = 0; left < N; ++left) {
-        while(right < N && times * a[right] <= K) {
-            times *= a[right++];
+        while(right < N && multi * a[right] <= K) {
+            multi *= a[right++];
         }
         length = max(length, right - left);
 
         if (right == left) ++right;
-        else times /= a[left];
+        else multi /= a[left];
     }
     cout << length << endl;
 }
