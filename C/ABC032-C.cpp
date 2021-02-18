@@ -9,10 +9,10 @@ int main() {
     for (auto &elm : a) cin >> elm;
 
     // 必要？
-    /* 0 があったら n をリターン */
-    for (int i = 0; i < n; ++i) {
+    /* 0 があったら N をリターン */
+    for (int i = 0; i < N; ++i) {
         if (a[i] == 0) {
-            cout << n << endl;
+            cout << N << endl;
             return 0;
         }
     }
